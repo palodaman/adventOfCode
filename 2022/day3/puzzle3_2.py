@@ -7,7 +7,7 @@ import itertools
 with open('puzzle3.txt') as f:
     for group in itertools.zip_longest(*[f]*3):
         s1 = set(group[0].rstrip('\n'))
-        s2 = set(group[1])
+        s2 = set(group[1].rstrip)
         s3 = set(group[2])
         char = s1 & s2 & s3
         print(char)

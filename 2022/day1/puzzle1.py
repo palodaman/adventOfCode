@@ -5,8 +5,9 @@
 digit = []
 sum = 0
 answer = []
-
+count = 0
 with open('puzzle1.txt') as f:
+                    
      for line in f:
         digit.append(line.rstrip('\n'))
         if line=='':
